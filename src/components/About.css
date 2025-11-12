@@ -1,0 +1,158 @@
+.about {
+  background: var(--bg-secondary);
+  position: relative;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--accent-gold), var(--torch-fire), transparent);
+  box-shadow: 0 0 10px var(--accent-gold);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: var(--accent-gold);
+  position: relative;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+}
+
+.section-title::before {
+  content: '⚔️';
+  margin-right: 15px;
+  color: var(--primary-color);
+}
+
+.section-title::after {
+  content: '⚔️';
+  margin-left: 15px;
+  color: var(--primary-color);
+}
+
+.section-title::before,
+.section-title::after {
+  animation: sword-spin 4s ease-in-out infinite;
+}
+
+@keyframes sword-spin {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(20deg); }
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.about-details {
+  margin-top: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.5), rgba(15, 15, 30, 0.5));
+  border-radius: 0;
+  border: 2px solid var(--border-color);
+  box-shadow: 
+    0 0 20px rgba(139, 92, 246, 0.2),
+    inset 0 0 20px rgba(139, 92, 246, 0.05);
+  clip-path: polygon(
+    0 15px, 15px 15px, 15px 0,
+    calc(100% - 15px) 0, calc(100% - 15px) 15px, 100% 15px,
+    100% calc(100% - 15px), calc(100% - 15px) calc(100% - 15px), calc(100% - 15px) 100%,
+    15px 100%, 15px calc(100% - 15px), 0 calc(100% - 15px)
+  );
+}
+
+.detail-item {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-item strong {
+  color: var(--accent-gold);
+  margin-right: 10px;
+  text-shadow: 0 0 5px rgba(251, 191, 36, 0.3);
+}
+
+.education {
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.8), rgba(15, 15, 30, 0.9));
+  padding: 30px;
+  border-radius: 0;
+  border: 2px solid var(--border-color);
+  box-shadow: 
+    0 0 20px rgba(139, 92, 246, 0.2),
+    inset 0 0 20px rgba(139, 92, 246, 0.05);
+  clip-path: polygon(
+    0 15px, 15px 15px, 15px 0,
+    calc(100% - 15px) 0, calc(100% - 15px) 15px, 100% 15px,
+    100% calc(100% - 15px), calc(100% - 15px) calc(100% - 15px), calc(100% - 15px) 100%,
+    15px 100%, 15px calc(100% - 15px), 0 calc(100% - 15px)
+  );
+}
+
+.education h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--accent-gold);
+  text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+  letter-spacing: 2px;
+}
+
+.education h3::before {
+  content: '📚 ';
+}
+
+.education-item {
+  margin-bottom: 20px;
+}
+
+.education-item h4 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.school {
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.duration {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px rgba(139, 92, 246, 0.3);
+}
+
+.description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+}
+

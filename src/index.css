@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=MedievalSharp&family=Cinzel:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Dark Fantasy Color Palette */
+  --primary-color: #8b5cf6;
+  --secondary-color: #d946ef;
+  --accent-gold: #fbbf24;
+  --accent-red: #ef4444;
+  --text-primary: #e5e7eb;
+  --text-secondary: #9ca3af;
+  --text-glow: #fde047;
+  --bg-primary: #0f0f1e;
+  --bg-secondary: #1a1a2e;
+  --bg-dark: #0a0a14;
+  --border-color: #4a4a6a;
+  --health-bar: #22c55e;
+  --mana-bar: #3b82f6;
+  --xp-bar: #fbbf24;
+  
+  /* Dungeon colors */
+  --stone-gray: #4b5563;
+  --torch-fire: #f97316;
+  --poison-green: #84cc16;
+  --blood-red: #dc2626;
+}
+
+body {
+  font-family: 'Cinzel', 'Georgia', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-primary);
+  line-height: 1.6;
+  background: var(--bg-primary);
+  background-image: 
+    linear-gradient(rgba(139, 92, 246, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 92, 246, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+code {
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  font-size: 0.75em;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 80px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: 'Cinzel', serif;
+}
+
+/* Pixel Corner Border Effect */
+.pixel-corners {
+  position: relative;
+  clip-path: polygon(
+    0 8px, 8px 8px, 8px 0,
+    calc(100% - 8px) 0, calc(100% - 8px) 8px, 100% 8px,
+    100% calc(100% - 8px), calc(100% - 8px) calc(100% - 8px), calc(100% - 8px) 100%,
+    8px 100%, 8px calc(100% - 8px), 0 calc(100% - 8px)
+  );
+}
+
+/* Glowing text effect */
+.text-glow {
+  color: var(--text-glow);
+  text-shadow: 
+    0 0 10px var(--accent-gold),
+    0 0 20px var(--accent-gold),
+    0 0 30px var(--accent-gold);
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% { 
+    text-shadow: 
+      0 0 10px var(--accent-gold),
+      0 0 20px var(--accent-gold),
+      0 0 30px var(--accent-gold);
+  }
+  50% { 
+    text-shadow: 
+      0 0 20px var(--accent-gold),
+      0 0 30px var(--accent-gold),
+      0 0 40px var(--accent-gold),
+      0 0 50px var(--accent-gold);
+  }
+}
+
+/* Scanline effect */
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
