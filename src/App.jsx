@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -8,10 +9,11 @@ import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import TadokamiDetail from './components/TadokamiDetail'
 
-function App() {
+function Home() {
   return (
-    <div className="App">
+    <>
       <Header />
       <Hero />
       <About />
@@ -20,7 +22,20 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-    </div>
+    </>
+  )
+}
+
+function App() {
+  return (
+    <Router basename="/porfolio-vuong">
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/tadokami" element={<TadokamiDetail />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 

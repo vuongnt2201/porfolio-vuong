@@ -56,9 +56,10 @@ export const projects = [
   {
     title: "Tadokami - Telegram Mini App",
     description: "Interactive gaming mini-app built for Telegram platform with engaging gameplay.",
-    technologies: ["JavaScript", "React", "Telegram Bot API"],
+    technologies: ["Unity", "WebGL", "C#", "Telegram Bot API"],
     link: "https://t.me/FSLGameHub_Bot/tadokami",
-    image: "/project2.jpg"
+    image: "/src/assets/fslgamehub/tadokami/tadokami_background.png",
+    hasDetailPage: true
   },
   {
     title: "FSL Game Hub",
