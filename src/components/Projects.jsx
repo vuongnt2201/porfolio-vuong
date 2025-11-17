@@ -1,26 +1,25 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { projects } from '../data/portfolioData'
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
+import { FaExternalLinkAlt } from 'react-icons/fa'
 import tadokamiBackground from '../assets/fslgamehub/tadokami/tadokami_background.png'
+import appPaymentPreview from '../assets/fslgamehub/gamehub/app_payment.gif'
 import './Projects.css'
 
 const Projects = () => {
   const navigate = useNavigate()
 
   const handleProjectClick = (project) => {
-    if (project.hasDetailPage) {
-      navigate('/tadokami')
+    if (project.detailRoute) {
+      navigate(project.detailRoute)
     } else if (project.link) {
       window.open(project.link, '_blank', 'noopener,noreferrer')
     }
   }
 
-  const getProjectImage = (project) => {
-    if (project.title === 'Tadokami - Telegram Mini App') {
-      return tadokamiBackground
-    }
-    return null
+  const customBackgrounds = {
+    '/tadokami': tadokamiBackground,
+    '/fsl-gamehub': appPaymentPreview
   }
 
   return (
@@ -29,21 +28,25 @@ const Projects = () => {
         <h2 className="section-title">Projects</h2>
         <div className="projects-grid">
           {projects.map((project, index) => {
-            const projectImage = getProjectImage(project)
+            const projectImage = project.detailRoute ? customBackgrounds[project.detailRoute] : null
+            const dynamicStyle = projectImage
+              ? {
+                  backgroundImage: `linear-gradient(135deg, rgba(7, 7, 20, 0.75), rgba(17, 17, 35, 0.65)), url(${projectImage})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center'
+                }
+              : {}
+
             return (
               <div 
                 key={index} 
                 className="project-card"
-                onClick={() => project.hasDetailPage && handleProjectClick(project)}
-                style={{ cursor: project.hasDetailPage ? 'pointer' : 'default' }}
+                onClick={() => project.detailRoute && handleProjectClick(project)}
+                style={{ cursor: project.detailRoute ? 'pointer' : 'default' }}
               >
                 <div 
                   className="project-image"
-                  style={projectImage ? { 
-                    backgroundImage: `url(${projectImage})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center'
-                  } : {}}
+                  style={dynamicStyle}
                 >
                   <div className="image-overlay">
                     <h3>{project.title}</h3>
@@ -58,11 +61,12 @@ const Projects = () => {
                     ))}
                   </div>
                   <div className="project-links">
-                    {project.hasDetailPage ? (
+                    {project.detailRoute ? (
                       <button 
+                        type="button"
                         onClick={(e) => {
                           e.stopPropagation()
-                          navigate('/tadokami')
+                          navigate(project.detailRoute)
                         }}
                         className="project-link"
                       >

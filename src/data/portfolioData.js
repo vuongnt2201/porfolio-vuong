@@ -59,7 +59,7 @@ export const projects = [
     technologies: ["Unity", "WebGL", "C#", "Telegram Bot API"],
     link: "https://t.me/FSLGameHub_Bot/tadokami",
     image: "/src/assets/fslgamehub/tadokami/tadokami_background.png",
-    hasDetailPage: true
+    detailRoute: "/tadokami"
   },
   {
     title: "FSL Game Hub",
@@ -67,7 +67,8 @@ export const projects = [
     technologies: ["React", "Node.js", "Mini App Development"],
     link: "https://t.me/FSLGameHub_Bot/fslgamehub",
     alternateLink: "https://miniapp.line.me/2007739334-1y40PGGg",
-    image: "/project3.jpg"
+    image: "/project3.jpg",
+    detailRoute: "/fsl-gamehub"
   }
 ]
 

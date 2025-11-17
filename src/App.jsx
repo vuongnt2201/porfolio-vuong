@@ -10,6 +10,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import TadokamiDetail from './components/TadokamiDetail'
+import GameHubDetail from './components/GameHubDetail'
 
 function Home() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tadokami" element={<TadokamiDetail />} />
+          <Route path="/fsl-gamehub" element={<GameHubDetail />} />
         </Routes>
       </div>
     </Router>
