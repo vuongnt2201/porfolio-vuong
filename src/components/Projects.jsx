@@ -4,6 +4,7 @@ import { projects } from '../data/portfolioData'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import tadokamiBackground from '../assets/fslgamehub/tadokami/tadokami_background.png'
 import appPaymentPreview from '../assets/fslgamehub/gamehub/app_payment.gif'
+import ecsPreview from '../assets/archmage/ecs.gif'
 import './Projects.css'
 
 const Projects = () => {
@@ -18,6 +19,7 @@ const Projects = () => {
   }
 
   const customBackgrounds = {
+    '/god-of-weapons': ecsPreview,
     '/tadokami': tadokamiBackground,
     '/fsl-gamehub': appPaymentPreview
   }

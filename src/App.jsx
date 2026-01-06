@@ -9,6 +9,7 @@ import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import GodOfWeaponsDetail from './components/GodOfWeaponsDetail'
 import TadokamiDetail from './components/TadokamiDetail'
 import GameHubDetail from './components/GameHubDetail'
 
@@ -33,6 +34,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/god-of-weapons" element={<GodOfWeaponsDetail />} />
           <Route path="/tadokami" element={<TadokamiDetail />} />
           <Route path="/fsl-gamehub" element={<GameHubDetail />} />
         </Routes>

@@ -48,10 +48,11 @@ export const experience = [
 export const projects = [
   {
     title: "God Of Weapons",
-    description: "An action-packed game available on Steam. Features intense combat mechanics and weapon customization.",
-    technologies: ["Unity", "C#", "Game Design"],
+    description: "Action roguelite on Steam. Worked on DLC content: new enemies, weapons, bosses and performance-focused systems.",
+    technologies: ["Unity", "C#", "DOTS", "ECS"],
     link: "https://store.steampowered.com/app/2342950/God_Of_Weapons/",
-    image: "/project1.jpg" // Thêm ảnh vào thư mục public
+    image: "/project1.jpg", // Thêm ảnh vào thư mục public
+    detailRoute: "/god-of-weapons"
   },
   {
     title: "Tadokami - Telegram Mini App",
