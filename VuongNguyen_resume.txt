@@ -1,0 +1,250 @@
+Nguyễn Thành Vương
+Multi-platform Game developer
+Ho Chi Minh City
+DOB: 2001 | (+84) 9 117 555 88 | vuongnt2201@gmail.com
+CAREER OBJECTIVE
+A committed Unity game developer with a solid background in cross-platform
+optimization, multiplayer networking, and gameplay development. Having worked on
+both independent and solo games as well as major projects like Gameloft and Archmage
+Games Studio, I hope to use my experience to produce top-notch PC games with
+captivating gameplay loops and expandable systems. My professional objective is to
+become a Game developer with an emphasis on creating engaging player experiences
+while upholding performance and technological excellence.
+EDUCATION
+Vietnam National University Ho Chi Minh City,
+University of Information Technology
+Computer Science - Web Developer​
+
+2019 - 2023
+
+Vinh University, High school for the gifted​
+
+2016 - 2018
+
+WORK EXPERIENCE
+
+Archmage Games Studio
+Unity game developer
+
+Ho Chi Minh City
+​​
+
+​
+
+​
+
+​
+
+July 2024 - Present
+
+Project: Horror Co-op game prototype (In progress)
+Unity 3D, C#
+●​ Drafted the first game concept, did research on similar titles, and
+
+experimented with different mechanics to shape the core gameplay loop.
+●​ Developed several core systems of the prototype such as enemy spawning, AI
+behaviors, and navigation with NavMesh.
+●​ Researched and implemented multiplayer networking using FishNet to test
+online features early.
+●​ Spent time testing, balancing, and fixing bugs to make sure the prototype felt
+stable and fun to play.
+●​ Helped coordinate work during the prototype phase: followed up on progress,
+jumped in to solve blockers, and supported teammates whenever they had
+issues.
+●​ Took part in discussions with the team to align on gameplay direction, new
+ideas, and how to move the project forward.
+●​ Looked for and tried out technical solutions that could keep the codebase
+cleaner and easier to maintain if the project grew bigger.
+Project: God of Weapons (DLC)
+​
+
+Unity 3D, DOTS, ECS
+●​ Working with designer, animator to create new enemies, weapons, bosses for
+game’s DLC.
+●​ Testing & fixing bugs in the game to implement game feel.
+
+●​ Researching or creating new systems to apply in our project, make source code
+more easier for a long-term commitment.
+●​ Link: God of weapons
+
+FSL Gamehub ​​
+
+​
+
+​
+
+​
+
+Unity game developer, front-end developer
+
+​
+
+​
+​
+
+​
+
+​
+
+Ho Chi Minh City
+Feb 2025 - Nov 2025
+
+Project: Tadokami - Telegram mini game (Solo developer)
+​
+
+Unity 2D, C#, Python, WebGL
+
+Developed a complete auto RPG game featuring a turn-based combat system, character
+management, and Firebase backend integration.
+Key Features:
+●​ Core Systems:
+○​ Automatic Turn-based combat system and damage calculation
+○​ Firebase integration (Database, Firestore, Authentication, Analytics)
+○​ Mobile-optimized UI with pop-up system
+
+●​ Unity Advanced Features:
+○​ Addressable Asset Loading - Dynamic asset management for WebGL
+optimization
+○​ Unity Localization Package - Multi-language support (JP/EN) with
+WebGL compatibility
+○​ Scriptable Object Data Management - Automated data architecture
+with code generation
+○​ Singleton Pattern System - Persistent managers across scenes
+●​ Performance & Optimization:
+○​ Sprite Atlas System - Organized atlasing for UI, characters,
+backgrounds, VFX
+○​ Unity Profiler Integration - Performance monitoring and optimization
+○​ WebGL Deployment - Cross-platform with Telegram Mini App
+integration via jslib bridge
+●​ Link: Tadokami
+Project: FSL Gamehub - Telegram mini app, LINE mini app
+​
+
+React, AI-Engineer
+●​ Developed a comprehensive game hub application integrated with Telegram
+
+Mini App, LINE mini app
+●​ Built multiple mini game modules, including coin flipping, scratch tickets, and
+task systems
+●​ Integrated blockchain technology (Solana, Polygon) and cryptocurrency
+payment processing, Telegram Stars payment processing
+●​ Implemented 3D animations, sound effects, and responsive UI design
+●​ Link: FSL Gamehub Telegram FSL Gamehub LINE
+●​ Analyzed and provided feedback on new update documentation and design
+proposals.
+●​ Planned and assigned tasks to team members based on feature requirements
+and development priorities.
+
+Gameloft - SAI Studio
+Game developer​ ​
+
+​
+
+Ho Chi Minh City
+​
+
+​
+
+​
+
+March 2023 - July 2024
+
+Project:
+1.​ Dragon Mania Legends: Greed & train dragons.
+​
+
+Working with C++ native & Gameloft engine (Porting)
+●​ Working with Designer to create new features or new events, then implementing
+them in the game’s source.
+●​ Working with Tester to fix Gameplay/UI bugs such as: resize, misaligned, shader,
+rendering, LOD,... to increase users' experience.
+●​ Manage online server and user data, deploy new content for the next update, or
+support users' feedback.
+●​ Researching new technology or new updates from third-party (Google Play, ads,...)
+& applying it to the game’s project.
+●​ Use Python & ReactJS to write & maintain automation scripts for tracking &
+managing Google Console Crash/ANRs data.
+●​ Optimize game rendering in multi-platform, low-end devices (Android, Windows).
+●​ Link: Dragon Mania Legends
+2.​ Asphalt 8 & 9: Car racing games.
+Working with C++ native & Jet Engine (Creation)
+●​ Working with Tester to fix Gameplay/UI bugs such as: resizing, misaligned,
+rendering,... to increase users’ experience.
+●​ Use Python to write automation scripts for publishing apps to the Microsoft Store
+& Amazon Store
+●​ Working with Java, XML to handle some problems on the Java side.
+●​ Use PHP to handle Server - Client API, game database (custom event, ads, local
+testing server, IAP).
+●​ Link: Asphalt 8 Asphalt 9
+
+Mobile World Investment Corporation
+Data Scientist internship​​
+
+​
+
+​
+
+​
+
+Ho Chi Minh City
+June 2022 - October 2022
+
+●​ Crawl & analyze data from other E-Commerce Website to help another departments
+write newspaper or adjust business strategy of company’s product.
+●​ Learning how to using Deep Learning to develop Computer Vision system.
+●​ Researching and developing Face & Object recognition systems for improving
+automation.
+
+Freelancer​
+
+​
+
+​
+
+​
+
+Teaching Assistant & Web developer
+
+​
+
+​
+
+Nghe An Province
+June 2021 - December 2021
+
+●​ Supporting and mentoring secondary school or high school students to participate
+in competitive programming at the Provincial/National level.
+●​ Teaching C++ basics to adult people.
+●​ Creating & developing a website for the teaching center.
+
+CERTIFICATIONS
+Vietnamese Olympiad in Informatics​
+Third prize
+Nghe An Province Olympiad in Informatics​
+First prize
+
+2018
+2018
+
+SKILLS & INTERESTS
+Technical skills
+●​ Strong knowledge of main language: C++/C#, Python
+●​ Web development knowledge: HTML, CSS, PHP, JavaScript
+●​ Experience in working with: Server, Client, Cloud, Database
+●​ Experience in working with Jira, Git, Git CI/CD, SVN
+●​ Android development: Java, SDK, NDK, ReactJS
+●​ Game development: Jet Engine, ActionScript3, Unreal Engine, Unity 2D, Unity 3D,
+Blender, Zbrush, Houdini
+●​ Experience in database design and development: SQL Server, MongoDB
+●​ Having knowledge in developing applications: OOP, MVC, RestAPI
+●​ Good at Mathematics, Data structures & Algorithms
+●​ Experience in working with Business Analyst, Tester
+Soft skills:
+●​ Teamwork, Communication skills, Proactive
+●​ Analytical, Logical thinking, Problem Solving
+●​ Good sense of designs: Enjoy working with designers
+●​ Fast learning, quick adapt with new source-code, tools and technology
+●​ Working under pressure, time management​
+Language: Vietnamese, English
+
+
