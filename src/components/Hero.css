@@ -207,6 +207,45 @@
   position: relative;
 }
 
+.profile-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0;
+  border: 3px solid var(--primary-color);
+  box-shadow: 
+    0 0 40px rgba(139, 92, 246, 0.5),
+    inset 0 0 40px rgba(139, 92, 246, 0.2),
+    0 20px 60px rgba(0, 0, 0, 0.5);
+  clip-path: polygon(
+    0 15px, 15px 15px, 15px 0,
+    calc(100% - 15px) 0, calc(100% - 15px) 15px, 100% 15px,
+    100% calc(100% - 15px), calc(100% - 15px) calc(100% - 15px), calc(100% - 15px) 100%,
+    15px 100%, 15px calc(100% - 15px), 0 calc(100% - 15px)
+  );
+  animation: avatar-pulse 4s ease-in-out infinite;
+  position: relative;
+}
+
+.image-placeholder::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--accent-gold), var(--primary-color));
+  background-size: 400% 400%;
+  animation: gradient-rotate 8s ease infinite;
+  clip-path: polygon(
+    0 15px, 15px 15px, 15px 0,
+    calc(100% - 15px) 0, calc(100% - 15px) 15px, 100% 15px,
+    100% calc(100% - 15px), calc(100% - 15px) calc(100% - 15px), calc(100% - 15px) 100%,
+    15px 100%, 15px calc(100% - 15px), 0 calc(100% - 15px)
+  );
+  z-index: -1;
+}
+
 .avatar-circle {
   width: 300px;
   height: 300px;
@@ -335,6 +374,11 @@
 
   .social-links {
     justify-content: center;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
   }
 
   .avatar-circle {

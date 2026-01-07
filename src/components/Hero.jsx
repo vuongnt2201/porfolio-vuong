@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons/fa'
 import { personalInfo } from '../data/portfolioData'
+import profileImage from '../assets/image/480458080_1137903547969478_7259039763294585688_n.jpg'
 import './Hero.css'
 
 const Hero = () => {
@@ -33,10 +34,11 @@ const Hero = () => {
         </div>
         <div className="hero-image">
           <div className="image-placeholder">
-            {/* Bạn có thể thêm ảnh profile tại đây */}
-            <div className="avatar-circle">
-              <span>{personalInfo.name.split(' ').map(n => n[0]).join('')}</span>
-            </div>
+            <img 
+              src={profileImage} 
+              alt={personalInfo.name}
+              className="profile-image"
+            />
           </div>
         </div>
       </div>

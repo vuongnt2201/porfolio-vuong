@@ -3,10 +3,10 @@ export const personalInfo = {
   name: "Vuong Nguyen",
   title: "Game Developer & Software Engineer",
   email: "vuongnt2201@gmail.com",
-  phone: "+84 XXX XXX XXX", // Thêm số điện thoại nếu muốn
+  phone: "+84 911 755 588", // Thêm số điện thoại nếu muốn
   location: "Vietnam",
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourprofile",
+  github: "https://github.com/vuongnt2201",
+  linkedin: "https://www.linkedin.com/in/vuong-nguyen-a5b29b284/",
   bio: "Passionate game developer with experience in creating engaging gaming experiences. Specialized in game development, software engineering, and building interactive applications."
 }
 
@@ -20,27 +20,28 @@ export const skills = {
 
 export const experience = [
   {
-    company: "Game Studio",
+    company: "Archmage Games Studio",
     position: "Game Developer",
-    duration: "2021 - Present",
-    location: "Vietnam",
+    duration: "July 2024 - Present",
+    location: "Ho Chi Minh City, Vietnam",
     responsibilities: [
-      "Developed and maintained game features using Unity and C#",
-      "Collaborated with designers and artists to implement game mechanics",
+      "Developed and maintained game features using Unity 3D and C#",
+      "Collaborated with designers and artists to implement game mechanics and systems",
       "Optimized game performance and fixed bugs",
       "Implemented multiplayer functionality and networking features"
     ]
   },
   {
-    company: "Tech Company",
+    company: "FSL Ecosystem",
     position: "Software Engineer",
-    duration: "2019 - 2021",
-    location: "Vietnam",
+    duration: "February 2025 - November 2025",
+    location: "Ho Chi Minh City, Vietnam",
     responsibilities: [
       "Built web applications using React and Node.js",
       "Worked on mini-apps for Telegram and LINE platforms",
       "Implemented RESTful APIs and database solutions",
-      "Participated in code reviews and agile development process"
+      "Participated in code reviews and agile development process",
+      "Integrated blockchain technology (Solana, Polygon) and cryptocurrency payment processing, Telegram Stars payment processing"
     ]
   }
 ]
@@ -51,7 +52,7 @@ export const projects = [
     description: "Action roguelite on Steam. Worked on DLC content: new enemies, weapons, bosses and performance-focused systems.",
     technologies: ["Unity", "C#", "DOTS", "ECS"],
     link: "https://store.steampowered.com/app/2342950/God_Of_Weapons/",
-    image: "/project1.jpg", // Thêm ảnh vào thư mục public
+    image: "/src/assets/image/gow.jpg", // Thêm ảnh vào thư mục public
     detailRoute: "/god-of-weapons"
   },
   {
@@ -75,10 +76,13 @@ export const projects = [
 
 export const education = [
   {
-    degree: "Bachelor of Computer Science",
-    school: "University Name",
+    degree: "VNUHCM, University of Information Technology",
+    school: "Bachelor of Computer Science",
     duration: "2015 - 2019",
-    description: "Focused on software engineering and game development"
+  },
+  {
+    degree: "Vinh University, High school for the gifted​",
+    duration: "2016 - 2018",
   }
 ]
 

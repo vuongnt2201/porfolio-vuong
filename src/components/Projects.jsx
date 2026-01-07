@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import { projects } from '../data/portfolioData'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import tadokamiBackground from '../assets/fslgamehub/tadokami/tadokami_background.png'
-import appPaymentPreview from '../assets/fslgamehub/gamehub/app_payment.gif'
-import ecsPreview from '../assets/archmage/ecs.gif'
+import fslImage from '../assets/image/fsl.png'
+import gowImage from '../assets/image/gow.jpg'
 import './Projects.css'
 
 const Projects = () => {
@@ -19,9 +19,9 @@ const Projects = () => {
   }
 
   const customBackgrounds = {
-    '/god-of-weapons': ecsPreview,
+    '/god-of-weapons': gowImage,
     '/tadokami': tadokamiBackground,
-    '/fsl-gamehub': appPaymentPreview
+    '/fsl-gamehub': fslImage
   }
 
   return (

@@ -26,6 +26,12 @@
   text-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
 }
 
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
 .section-title::before {
   content: '⚔️';
   margin-right: 15px;
