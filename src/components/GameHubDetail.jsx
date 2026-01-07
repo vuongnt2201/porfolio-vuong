@@ -4,6 +4,7 @@ import { FaArrowLeft, FaReact, FaTelegramPlane, FaCreditCard, FaGamepad } from '
 import appPayment from '../assets/fslgamehub/gamehub/app_payment.gif'
 import miniGame from '../assets/fslgamehub/gamehub/mini_game.gif'
 import scratchTicket from '../assets/fslgamehub/gamehub/scratch_ticket.gif'
+import cryptoPayment from '../assets/fslgamehub/gamehub/crypto_payment.gif'
 import './GameHubDetail.css'
 
 const featureHighlights = [
@@ -145,11 +146,9 @@ const GameHubDetail = () => {
               <img src={appPayment} alt="Telegram payment flow" />
               <div className="media-caption">Live payment capture using Stars plus in-app currency overlap.</div>
             </div>
-            <div className="media-card placeholder">
-              <div className="placeholder-frame">
-                <FaCreditCard />
-                <p>Crypto payment on LINE mini app<br />Video placeholder – recording scheduled</p>
-              </div>
+            <div className="media-card">
+              <img src={cryptoPayment} alt="Crypto payment on LINE mini app" />
+              <div className="media-caption">Crypto payment on LINE mini app</div>
             </div>
           </div>
           <ul className="payment-bullets">
