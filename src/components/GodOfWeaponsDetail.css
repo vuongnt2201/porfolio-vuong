@@ -254,13 +254,15 @@
 }
 
 .technique-card.has-image {
-  flex-direction: row;
+  flex-direction: column !important;
   gap: 30px;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .technique-content {
+  width: 100% !important;
   flex: 1;
+  order: 1;
 }
 
 .technique-card::before {
@@ -321,21 +323,24 @@
 
 .technique-image {
   flex-shrink: 0;
-  width: 30%;
-  max-width: 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
+  width: 100% !important;
+  max-width: 100% !important;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  order: -1;
 }
 
 .technique-image img {
-  width: 75%;
+  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
-  border-radius: 8px;
-  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -453,7 +458,7 @@
   }
 
   .technique-image img {
-    width: 75%;
+    width: 100%;
   }
 
   .challenges-grid {

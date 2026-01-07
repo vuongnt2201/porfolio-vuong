@@ -113,6 +113,11 @@ const GodOfWeaponsDetail = () => {
             <div className="techniques-grid">
               {techniques.map((technique, index) => (
                 <div key={index} className={`technique-card ${technique.image ? 'has-image' : ''}`}>
+                  {technique.image && (
+                    <div className="technique-image">
+                      <img src={technique.image} alt={technique.title} />
+                    </div>
+                  )}
                   <div className="technique-content">
                     <div className="technique-header">
                       <div className="technique-icon">{technique.icon}</div>
@@ -125,11 +130,6 @@ const GodOfWeaponsDetail = () => {
                       ))}
                     </ul>
                   </div>
-                  {technique.image && (
-                    <div className="technique-image">
-                      <img src={technique.image} alt={technique.title} />
-                    </div>
-                  )}
                 </div>
               ))}
             </div>
