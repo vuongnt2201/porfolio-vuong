@@ -78,7 +78,7 @@ export const education = [
   {
     degree: "VNUHCM, University of Information Technology",
     school: "Bachelor of Computer Science",
-    duration: "2015 - 2019",
+    duration: "2019 - 2024",
   },
   {
     degree: "Vinh University, High school for the gifted​",
