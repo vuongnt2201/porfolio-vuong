@@ -181,10 +181,37 @@ section h2 {
   letter-spacing: 2px;
 }
 
+.overview-section {
+  padding: 50px 45px !important;
+}
+
 .overview-section p {
   color: var(--text-secondary);
   line-height: 1.8;
   margin-bottom: 20px;
+}
+
+.project-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0 0 0;
+  display: grid;
+  gap: 12px;
+}
+
+.project-highlights li {
+  position: relative;
+  padding-left: 25px;
+  padding-right: 10px;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.project-highlights li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
 }
 
 .resume-highlights {
