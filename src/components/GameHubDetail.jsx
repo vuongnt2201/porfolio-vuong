@@ -76,24 +76,25 @@ const GameHubDetail = () => {
             <FaArrowLeft /> Back to Portfolio
           </button>
           <div className="hero-content">
-            <p className="hero-label">FSL Game Hub · Tadokami Live Ops</p>
-            <h1>Game Hub Operations</h1>
-            <p className="hero-description">
-              React-driven mini app hosting Tadokami and an evolving catalog of earning loops across Telegram and LINE.
-              I owned the full client experience before handing data pipelines to backend and content teams.
-            </p>
-            <div className="hero-meta">
-              <div>
-                <span>Timeline</span>
-                <strong>Feb – Nov 2025</strong>
-              </div>
-              <div>
-                <span>Role</span>
-                <strong>Unity & Front-end Developer</strong>
-              </div>
-              <div>
-                <span>Platforms</span>
-                <strong>Telegram · LINE Mini App</strong>
+            <h1>FSL Game Hub</h1>
+            <div className="hero-bottom-section">
+              <p className="hero-description">
+                React-driven mini app hosting Tadokami and an evolving catalog of earning loops across Telegram and LINE.
+                I owned the full client experience before handing data pipelines to backend and content teams.
+              </p>
+              <div className="hero-meta">
+                <div>
+                  <span>Timeline</span>
+                  <strong>Feb – Nov 2025</strong>
+                </div>
+                <div>
+                  <span>Role</span>
+                  <strong>Unity & Front-end Developer</strong>
+                </div>
+                <div>
+                  <span>Platforms</span>
+                  <strong>Telegram · LINE Mini App</strong>
+                </div>
               </div>
             </div>
           </div>

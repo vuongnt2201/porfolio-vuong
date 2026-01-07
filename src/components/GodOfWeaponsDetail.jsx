@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { FaArrowLeft, FaMicrochip, FaBrain, FaCogs } from 'react-icons/fa'
+import gowBackground from '../assets/image/gow.jpg'
 import ecsGif from '../assets/archmage/ecs.gif'
 import gasBehaviourTreeGif from '../assets/archmage/gas_behaviour_tree.gif'
 import './GodOfWeaponsDetail.css'
@@ -51,7 +52,7 @@ const GodOfWeaponsDetail = () => {
 
   return (
     <div className="gow-detail">
-      <div className="gow-hero">
+      <div className="gow-hero" style={{ backgroundImage: `url(${gowBackground})` }}>
         <div className="hero-overlay">
           <button className="back-button" onClick={() => navigate('/')}>
             <FaArrowLeft /> Back to Portfolio

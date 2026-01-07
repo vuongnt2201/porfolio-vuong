@@ -9,9 +9,9 @@
   width: 100%;
   height: 70vh;
   min-height: 500px;
-  background: radial-gradient(circle at 20% 20%, rgba(251, 191, 36, 0.25), transparent 45%),
-    radial-gradient(circle at 80% 0%, rgba(96, 165, 250, 0.25), transparent 50%),
-    linear-gradient(135deg, #05050f, #141428 60%, #05050f);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,12 +21,15 @@
 .gow-hero::before {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(
     135deg,
-    rgba(5, 5, 15, 0.85) 0%,
-    rgba(10, 10, 25, 0.8) 45%,
-    rgba(5, 5, 15, 0.9) 100%
+    rgba(15, 15, 30, 0.85) 0%,
+    rgba(26, 26, 46, 0.75) 50%,
+    rgba(15, 15, 30, 0.85) 100%
   );
   z-index: 1;
 }
@@ -110,8 +113,8 @@
   align-items: center;
   gap: 8px;
   padding: 15px 25px;
-  background: rgba(15, 23, 42, 0.75);
-  border: 1px solid var(--border-color);
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid var(--primary-color);
   clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
   backdrop-filter: blur(10px);
 }
@@ -124,7 +127,7 @@
 }
 
 .meta-value {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: var(--accent-gold);
   font-weight: 700;
 }
@@ -415,9 +418,14 @@
 }
 
 @media (max-width: 768px) {
+  .gow-hero {
+    height: 60vh;
+    min-height: 400px;
+  }
+
   .gow-title {
     font-size: 3rem;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
   }
 
   .gow-subtitle {
@@ -442,7 +450,7 @@
   }
 
   .technique-image img {
-    width: 80%;
+    width: 75%;
   }
 
   .challenges-grid {

@@ -6,15 +6,32 @@
 
 .gamehub-hero {
   position: relative;
-  height: 65vh;
-  min-height: 480px;
-  background: radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.35), transparent 40%),
-    radial-gradient(circle at 80% 0%, rgba(59, 130, 246, 0.25), transparent 45%),
-    linear-gradient(135deg, #05050f, #12122b 60%, #05050f);
-  overflow: hidden;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.gamehub-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 15, 30, 0.85) 0%,
+    rgba(26, 26, 46, 0.75) 50%,
+    rgba(15, 15, 30, 0.85) 100%
+  );
+  z-index: 1;
 }
 
 .hero-background-image {
@@ -33,93 +50,110 @@
 }
 
 .hero-overlay {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px;
-  background: linear-gradient(135deg, rgba(5, 5, 15, 0.85), rgba(18, 18, 43, 0.85));
-  position: relative;
-  z-index: 1;
+  padding: 20px;
 }
 
 .hero-content {
-  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  position: relative;
-}
-
-.hero-label {
-  color: var(--accent-gold);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  margin-bottom: 15px;
+  max-width: 1200px;
+  width: 100%;
+  animation: fadeInUp 1s ease-out;
 }
 
 .gamehub-hero h1 {
   font-size: 3.5rem;
   letter-spacing: 6px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: var(--accent-gold);
   text-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
 }
 
+.hero-bottom-section {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  text-align: left;
+}
+
 .hero-description {
+  max-width: 500px;
   color: var(--text-secondary);
   font-size: 1.1rem;
   line-height: 1.8;
-  margin: 0 auto 30px;
+  margin: 0;
 }
 
 .hero-meta {
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: flex-start;
 }
 
 .hero-meta div {
-  background: rgba(255, 255, 255, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
   padding: 15px 25px;
-  border: 1px solid var(--border-color);
-  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid var(--primary-color);
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+  backdrop-filter: blur(10px);
 }
 
 .hero-meta span {
-  display: block;
   font-size: 0.75rem;
-  text-transform: uppercase;
   color: var(--text-secondary);
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .hero-meta strong {
   font-size: 1.1rem;
-  color: var(--text-primary);
+  color: var(--accent-gold);
+  font-weight: 700;
 }
 
 .back-button {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  background: rgba(139, 92, 246, 0.2);
-  border: 1px solid var(--primary-color);
-  color: var(--text-primary);
-  padding: 10px 18px;
-  display: inline-flex;
-  gap: 10px;
+  top: 30px;
+  left: 30px;
+  display: flex;
   align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: rgba(139, 92, 246, 0.2);
+  border: 2px solid var(--primary-color);
+  color: var(--text-primary);
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+  backdrop-filter: blur(10px);
 }
 
 .back-button:hover {
   background: var(--primary-color);
-  color: var(--bg-dark);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
 }
 
 .gamehub-content {
@@ -464,15 +498,55 @@ section h2 {
   margin-top: 5px;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 768px) {
+  .gamehub-hero {
+    height: 60vh;
+    min-height: 400px;
+  }
+
   .gamehub-hero h1 {
     font-size: 2.5rem;
     letter-spacing: 3px;
+    margin-bottom: 30px;
+  }
+
+  .hero-bottom-section {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hero-description {
+    font-size: 1rem;
   }
 
   .hero-meta {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
+  }
+
+  .hero-overlay {
+    padding: 15px;
+  }
+
+  .back-button {
+    top: 15px;
+    left: 15px;
+    padding: 10px 18px;
+    font-size: 0.9rem;
   }
 
   section {
