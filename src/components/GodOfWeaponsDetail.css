@@ -209,11 +209,11 @@
   color: var(--text-primary);
 }
 
-.techniques-section {
+.gow-techniques-section {
   margin-bottom: 80px;
 }
 
-.techniques-section h2 {
+.gow-techniques-section h2 {
   font-size: 2.5rem;
   color: var(--accent-gold);
   margin-bottom: 50px;
@@ -222,13 +222,13 @@
   letter-spacing: 2px;
 }
 
-.techniques-grid {
+.gow-techniques-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
 }
 
-.technique-card {
+.gow-technique-card {
   background: linear-gradient(135deg, rgba(15, 15, 30, 0.95), rgba(17, 24, 39, 0.9));
   border: 2px solid var(--border-color);
   padding: 30px;
@@ -253,19 +253,19 @@
   flex-direction: column;
 }
 
-.technique-card.has-image {
+.gow-technique-card.gow-has-image {
   flex-direction: column !important;
   gap: 30px;
   align-items: stretch;
 }
 
-.technique-content {
+.gow-technique-content {
   width: 100% !important;
   flex: 1;
   order: 1;
 }
 
-.technique-card::before {
+.gow-technique-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -277,24 +277,24 @@
   transition: opacity 0.3s ease;
 }
 
-.technique-card:hover {
+.gow-technique-card:hover {
   transform: translateY(-5px);
   border-color: var(--primary-color);
   box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
 }
 
-.technique-card:hover::before {
+.gow-technique-card:hover::before {
   opacity: 1;
 }
 
-.technique-header {
+.gow-technique-header {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 20px;
 }
 
-.technique-icon {
+.gow-technique-icon {
   font-size: 2rem;
   color: var(--primary-color);
   display: flex;
@@ -307,21 +307,21 @@
   clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
 }
 
-.technique-header h3 {
+.gow-technique-header h3 {
   color: var(--accent-gold);
   font-size: 1.5rem;
   margin: 0;
   flex: 1;
 }
 
-.technique-description {
+.gow-technique-description {
   color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: 20px;
   font-size: 1rem;
 }
 
-.technique-image {
+.gow-technique-image {
   flex-shrink: 0;
   width: 100% !important;
   max-width: 100% !important;
@@ -333,7 +333,7 @@
   order: -1;
 }
 
-.technique-image img {
+.gow-technique-image img {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -344,13 +344,13 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-.technique-details {
+.gow-technique-details {
   list-style: none;
   padding: 0;
   margin-top: 20px;
 }
 
-.technique-details li {
+.gow-technique-details li {
   color: var(--text-secondary);
   padding: 10px 0 10px 25px;
   position: relative;
@@ -358,11 +358,11 @@
   border-bottom: 1px solid rgba(148, 163, 184, 0.2);
 }
 
-.technique-details li:last-child {
+.gow-technique-details li:last-child {
   border-bottom: none;
 }
 
-.technique-details li::before {
+.gow-technique-details li::before {
   content: '▸';
   position: absolute;
   left: 0;
@@ -444,20 +444,20 @@
     gap: 20px;
   }
 
-  .techniques-grid {
+  .gow-techniques-grid {
     grid-template-columns: 1fr;
   }
 
-  .technique-card.has-image {
+  .gow-technique-card.gow-has-image {
     flex-direction: column;
   }
 
-  .technique-image {
+  .gow-technique-image {
     width: 100%;
     max-width: 100%;
   }
 
-  .technique-image img {
+  .gow-technique-image img {
     width: 100%;
   }
 

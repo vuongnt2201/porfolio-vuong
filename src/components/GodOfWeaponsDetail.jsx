@@ -108,23 +108,23 @@ const GodOfWeaponsDetail = () => {
             </div>
           </section>
 
-          <section className="techniques-section">
+          <section className="gow-techniques-section">
             <h2>Technical Implementation</h2>
-            <div className="techniques-grid">
+            <div className="gow-techniques-grid">
               {techniques.map((technique, index) => (
-                <div key={index} className={`technique-card ${technique.image ? 'has-image' : ''}`}>
+                <div key={index} className={`gow-technique-card ${technique.image ? 'gow-has-image' : ''}`}>
                   {technique.image && (
-                    <div className="technique-image">
+                    <div className="gow-technique-image">
                       <img src={technique.image} alt={technique.title} />
                     </div>
                   )}
-                  <div className="technique-content">
-                    <div className="technique-header">
-                      <div className="technique-icon">{technique.icon}</div>
+                  <div className="gow-technique-content">
+                    <div className="gow-technique-header">
+                      <div className="gow-technique-icon">{technique.icon}</div>
                       <h3>{technique.title}</h3>
                     </div>
-                    <p className="technique-description">{technique.description}</p>
-                    <ul className="technique-details">
+                    <p className="gow-technique-description">{technique.description}</p>
+                    <ul className="gow-technique-details">
                       {technique.details.map((detail, idx) => (
                         <li key={idx}>{detail}</li>
                       ))}
