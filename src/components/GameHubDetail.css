@@ -17,6 +17,21 @@
   justify-content: center;
 }
 
+.hero-background-image {
+  position: absolute;
+  border-radius: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(https://framerusercontent.com/images/BH1JVVDgRvetpVIvOS5tNdWw4.svg);
+  background-repeat: repeat;
+  background-position: left top;
+  border: 0;
+  background-size: 309px auto;
+  z-index: 0;
+}
+
 .hero-overlay {
   width: 100%;
   height: 100%;
@@ -25,6 +40,8 @@
   justify-content: center;
   padding: 30px;
   background: linear-gradient(135deg, rgba(5, 5, 15, 0.85), rgba(18, 18, 43, 0.85));
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content {

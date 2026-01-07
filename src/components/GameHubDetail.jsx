@@ -70,6 +70,7 @@ const GameHubDetail = () => {
   return (
     <div className="gamehub-detail">
       <div className="gamehub-hero">
+        <div className="hero-background-image"></div>
         <div className="hero-overlay">
           <button className="back-button" onClick={() => navigate('/')}>
             <FaArrowLeft /> Back to Portfolio
