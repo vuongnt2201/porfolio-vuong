@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { FaArrowLeft, FaMicrochip, FaBrain, FaCogs } from 'react-icons/fa'
 import gowBackground from '../assets/image/gow.jpg'
@@ -49,6 +49,10 @@ const techniques = [
 
 const GodOfWeaponsDetail = () => {
   const navigate = useNavigate()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div className="gow-detail">

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { FaArrowLeft, FaReact, FaTelegramPlane, FaCreditCard, FaGamepad } from 'react-icons/fa'
 import appPayment from '../assets/fslgamehub/gamehub/app_payment.gif'
@@ -66,6 +66,10 @@ const projectHighlights = [
 
 const GameHubDetail = () => {
   const navigate = useNavigate()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div className="gamehub-detail">

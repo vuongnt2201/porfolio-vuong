@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { FaArrowLeft, FaCode, FaMemory, FaServer, FaGamepad } from 'react-icons/fa'
 import tadokamiBackground from '../assets/fslgamehub/tadokami/tadokami_background.png'
@@ -8,6 +8,10 @@ import './TadokamiDetail.css'
 
 const TadokamiDetail = () => {
   const navigate = useNavigate()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const techniques = [
     {
