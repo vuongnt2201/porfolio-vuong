@@ -141,14 +141,24 @@ const GameHubDetail = () => {
               ready for a crypto payment rail on LINE once the capture is recorded.
             </p>
           </div>
-          <div className="payment-grid">
-            <div className="media-card">
-              <img src={appPayment} alt="Telegram payment flow" />
-              <div className="media-caption">Live payment capture using Stars plus in-app currency overlap.</div>
-            </div>
-            <div className="media-card">
+          <div className="payment-container">
+            <div className="crypto-payment-full">
               <img src={cryptoPayment} alt="Crypto payment on LINE mini app" />
               <div className="media-caption">Crypto payment on LINE mini app</div>
+            </div>
+            <div className="app-payment-row">
+              <div className="app-payment-media">
+                <img src={appPayment} alt="Telegram payment flow" />
+              </div>
+              <div className="app-payment-content">
+                <h3><FaCreditCard /> Telegram Stars Payment</h3>
+                <p>Live payment capture using Stars plus in-app currency overlap. Seamless integration with Telegram's native payment system for instant transactions.</p>
+                <ul>
+                  <li>Real-time payment processing with optimistic UI updates</li>
+                  <li>Secure transaction handling with backend reconciliation</li>
+                  <li>Multi-currency support (Stars, in-app currency, hybrid pools)</li>
+                </ul>
+              </div>
             </div>
           </div>
           <ul className="payment-bullets">
